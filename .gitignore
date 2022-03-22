@@ -1,5 +1,7 @@
 .vscode/
-Logs/
-UserSettings/
+/UserSettings
+/Library
+/Logs
+/Temp
 Assets/Pixel Adventure 2/
 Assets/Sunnyland/

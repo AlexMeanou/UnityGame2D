@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private AudioSource jumpSoundEffect;
 
+    [SerializeField] private GameObject overScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         coll = GetComponent<BoxCollider2D>();
+        this.overScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -49,7 +52,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (isOver)
         {
-            onGameOver();
+            this.overScreen.SetActive(true);
+            // onGameOver();
         }
     }
 

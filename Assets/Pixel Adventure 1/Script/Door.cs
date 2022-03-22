@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
                 theSR.sprite = doorOpenSprite;
                 thePlayer.followingKey.gameObject.SetActive(false);
                 thePlayer.followingKey = null;
-                thePlayer.isOver = false;
+                thePlayer.isOver = true;
             }
         }
     }
